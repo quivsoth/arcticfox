@@ -1,16 +1,16 @@
 // var MongoClient = require('mongodb').MongoClient;
 
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
+// var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
 
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
+// var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 
  
 
-server.listen(server_port, server_ip_address, function () {
+// server.listen(server_port, server_ip_address, function () {
 
-  console.log( "Listening on " + server_ip_address + ", port " + server_port )
+//   console.log( "Listening on " + server_ip_address + ", port " + server_port )
 
-});
+// });
 
 
 // // Connect to the db
@@ -26,3 +26,6 @@ server.listen(server_port, server_ip_address, function () {
 //      //Write databse Insert/Update/Query code here..
             
 // });
+
+
+console.log("Here");
