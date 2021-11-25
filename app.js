@@ -9,6 +9,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+const uri = 'mongodb-26-rhel7.mle.srv.cluster.local';
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(logger('dev'));
 app.use(express.json());
