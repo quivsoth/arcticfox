@@ -8,7 +8,7 @@ var mongoose = require("mongoose");
 router.get('/', function(req, res, next) {
   (async function() {
     const collections = await getCollections();
-    res.render('index', { title: 'Express' });
+    res.render('index', { title: 'Express TG' });
   })();
 });
 
