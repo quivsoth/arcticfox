@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-const uri = 'mongodb-26-rhel7-mle.apps-crc.testing';
+const uri = 'mongodb://10.217.4.154:27017';
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(logger('dev'));
