@@ -12,7 +12,8 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-const uri = 'mongodb://10.217.4.154:27017';
+// const uri = 'mongodb://10.217.4.154:27017';
+const uri = process.env.MONGO_DB;
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(logger('dev'));
