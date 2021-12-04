@@ -13,8 +13,8 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 // const uri = 'mongodb://10.217.5.234:27017';
-const uri = process.env.MONGO_DB;
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+// const uri = process.env.MONGO_DB;
+// mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(logger('dev'));
 app.use(express.json());

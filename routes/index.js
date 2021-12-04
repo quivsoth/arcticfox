@@ -1,13 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
-const {MongoClient} = require('mongodb');
-var mongoose = require("mongoose");
+// const {MongoClient} = require('mongodb');
+// var mongoose = require("mongoose");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   (async function() {
-    const collections = await getCollections();
+    // const collections = await getCollections();
     res.render('index', { title: 'Express TG' });
   })();
 });
