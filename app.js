@@ -5,15 +5,15 @@ var logger = require('morgan');
 var mongoose = require('mongoose');
 
 console.log("Starting Arctic Fox");
-console.log("DB: " + "10.217.5.234:27017");
+console.log("DB: " + process.env.MONGO_DB);
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
 
-const uri = 'mongodb://10.217.5.234:27017';
-//const uri = process.env.MONGO_DB;
+// const uri = 'mongodb://10.217.5.234:27017';
+const uri = process.env.MONGO_DB;
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(logger('dev'));

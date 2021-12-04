@@ -1,2 +1,2 @@
-MONGO_DB=10.217.5.234:27017
+MONGO_DB=mongodb-26-rhel7-mle.apps-crc.testing:27017
 PORT=8080
